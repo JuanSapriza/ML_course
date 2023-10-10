@@ -20,7 +20,7 @@ def base_visualization(grid_losses, w0_list, w1_list, mean_x, std_x, height, wei
 
     # plot contourf
     ax1 = fig.add_subplot(1, 2, 1)
-    cp = ax1.contourf(w0, w1, grid_losses.T, cmap=plt.cm.jet)
+    cp = ax1.contourf(w0, w1, grid_losses.T, 20, cmap=plt.cm.jet)
     fig.colorbar(cp, ax=ax1)
     ax1.set_xlabel(r"$w_0$")
     ax1.set_ylabel(r"$w_1$")
